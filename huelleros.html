@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+			
+   .container {
+      display: flex;
+      align-items: center;
+        }
+        
+    .button {
+       margin-left: 90px;
+    }
+    .container_menuprincipal {
+      display: flex;
+      align-items: center;
+    }
+
+    .categorias_productos {
+      font-size: 10%;
+      display: flex;
+      width: 100%;
+      height: 35px;
+      background-color: rgb(255, 251, 0);
+      align-items: center;
+      font-size: 50px;
+    }
+
+    .categoria1,.categoria2,.categoria3,.categoria4 {
+      font-weight: bold;
+      padding: 50px;
+      font-size: 15px;
+      display: flex;
+
+    }
+
+    .product-list {
+      flex: 5;
+      
+    }
+
+    .product {
+      display: flex;
+      padding: 10px;
+      border-bottom: 1px solid gray;
+    }
+
+    .product-image {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .product-description {
+      flex: 1;
+    }
+   
+    .product-image {
+      width: 30%;
+      height: 200px;
+      transition: transform 0.2s;
+    }
+    
+    .product-image:hover {
+      transform: scale(2);
+    }
+     </style>
+
+</head>
+
+
+<body>
+    <div class="container_menuprincipal">
+      <img src="logo_troda.jpg" alt="Mi imagen" width="10%" height="10%">
+      <a href="index.html" class="btn">inicio</a>
+      <a href="ejercicioformulario.html" class="btn">Contacto</a>
+        <a href="nosotros.html" class="btn">Sobre nosotros</a>
+      <a href="tienda.html" class="btn">Productos</a>
+      <a href="https://trodacolweb.000webhostapp.com/index.php?vista=login" class="btn">Login</a>
+	  </div>
+
+
+  <div class="container_categorias">
+    <div class="categorias_productos">
+      <div class="categoria1"><a href="tienda.html" class="btn">sellos</a></div>
+      <div class="categoria2"><a href="huelleros.html" class="btn">huelleros</a></div>
+      <div class="categoria3"><a href="papeleria.html" class="btn">papeleria</a></div>
+      <div class="categoria4"><a href="aseo.html" class="btn">aseo</a></div>
+      <!-- Agrega más categorías aquí -->
+    </div>
+    <div class="product-list">
+      <div class="product">
+        <img class="product-image" src="Almohadilla-5c-1200x565.jpg" alt="Producto 1">
+        <div class="product-description">
+          <h3>Almohadillas</h3>
+          <p>Mediante el uso de Almohadillas de tinta, puede asegurarse de que su sello ofrece constantemente 
+            impresiones limpias y uniformes. Tanto el material del cartucho y la tinta se han perfeccionado 
+            durante años de investigación. Hay almohadillas de repuesto para todos los modelos. Todas las tintas 
+            garantizan impresiones que durarán décadas.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="Estuches-de-bolsillo.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Estuches</h3>
+          <p>Son una opción clásica y muy elegante que puede servir tanto para artistas y 
+            manualidades como para aquellos que realicen estampaciones de manera no tan exhaustiva.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="tintas-premium-shiny-15-mlP-1200x565.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Tintas</h3>
+          <p>Tintas con base de agua apta para cualquier tampón y 
+            almohadillas sellos automáticos. Colores básicos. 
+            Ideal para marcar papel.</p>
+        </div>
+      </div>
+
+          </p>
+        </div>
+      </div>
+      <!-- Agrega más productos aquí -->
+    </div>
+  </div>
+  <script>
+    const productImage = document.querySelector('.product-image');
+    
+    productImage.addEventListener('mouseover', function() {
+      productImage.style.transform = 'scale(2)';
+    });
+    
+    productImage.addEventListener('mouseout', function() {
+      productImage.style.transform = 'scale(1)';
+    });
+    
+  </script>
+
+
+
+
+
+
+</body>
+<footer style="background-color: #f2f2f2; padding: 100px; text-align: center;">
+	<h3 style="font-size: 24px; color: #000000; text-align: left;">TRODACOL LTDA</h3>
+	<p style="font-size: 16px; color: #666;text-align: left;">Este es una pagina dirigida a TRODACOL LTDA</p>
+	<p style="font-size: 16px; color: #666;text-align: left;">
+        Contacto."<br>";
+        Ubicación."<br>";
+        Bogotá Cra. 69 C No. 70-16,."<br>";
+        Tercer(3) piso.."<br>";
+        
+        Telefonos."<br>";
+        310 8241."<br>";
+        301 202 5840."<br>";
+        
+        Email
+        gerencia@trodacol.com
+    
+    </p>
+  
+</footer>
+
+
+
+</html>

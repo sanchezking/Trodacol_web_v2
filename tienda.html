@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+			
+   .container {
+      display: flex;
+      align-items: center;
+        }
+        
+    .button {
+       margin-left: 90px;
+    }
+    .container_menuprincipal {
+      display: flex;
+      align-items: center;
+    }
+
+    .categorias_productos {
+      font-size: 10%;
+      display: flex;
+      width: 100%;
+      height: 35px;
+      background-color: rgb(255, 251, 0);
+      align-items: center;
+      font-size: 50px;
+    }
+
+    .categoria1,.categoria2,.categoria3,.categoria4 {
+      font-weight: bold;
+      padding: 50px;
+      font-size: 15px;
+      display: flex;
+
+    }
+
+    .product-list {
+      flex: 5;
+      
+    }
+
+    .product {
+      display: flex;
+      padding: 10px;
+      border-bottom: 1px solid gray;
+    }
+
+    .product-image {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .product-description {
+      flex: 1;
+    }
+   
+    .product-image {
+      width: 30%;
+      height: 200px;
+      transition: transform 0.2s;
+    }
+    
+    .product-image:hover {
+      transform: scale(2);
+    }
+     </style>
+
+</head>
+
+
+<body>
+    <div class="container_menuprincipal">
+		<img src="logo_troda.jpg" alt="Mi imagen" width="10%" height="10%">
+		<a href="index.html" class="btn">inicio</a>
+		<a href="contacto.html" class="btn">Contacto</a>
+	    <a href="nosotros.html" class="btn">Sobre nosotros</a>
+		<a href="tienda.html" class="btn">Productos</a>
+    <a href="https://trodacolweb.000webhostapp.com/index.php?vista=login" class="btn">Login</a>
+	  </div>
+
+
+  <div class="container_categorias">
+    <div class="categorias_productos">
+      <div class="categoria1"><a href="tienda.html" class="btn">sellos</a></div>
+      <div class="categoria2"><a href="huelleros.html" class="btn">huelleros</a></div>
+      <div class="categoria3"><a href="papeleria.html" class="btn">papeleria</a></div>
+      <div class="categoria4"><a href="aseo.html" class="btn">aseo</a></div>
+      <!-- Agrega más categorías aquí -->
+    </div>
+    <div class="product-list">
+      <div class="product">
+        <img class="product-image" src="sellos s300-s600-1200x565.jpg" alt="Producto 1">
+        <div class="product-description">
+          <h3>Sellos S-300 -S3600</h3>
+          <p>Fechadores Automáticos y Manuales con sello, diferentes tamaños y almohadillas 
+            intercambiables. Los sellos fechadores sirven para ahorrarnos el tiempo de estar 
+            escribiendo constantemente una fecha. Los fechadores disponen de unas ruedecillas 
+            giratorias que nos permiten ajustar una fecha determinada.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="Sello-con-Imprentilla-S-883c-1200x565.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Sello S-722 – S-883</h3>
+          <p>Sellos instantáneas de calidad que ayudan a crear sus propios textos siempre que lo necesite. 
+            Sellos esenciales para el uso en oficinas y la movilidad. Cada imprentilla repite varias veces las letras y 
+            números. Cuando necesite entregar alguna documentación sellada urgentemente podrá realizar con este blister en 
+            cuestión de minutos su sello y estampar los documentos.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="self-inking-stamp-printer-r-c-1200x565.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Sellos R-524 – R-552</h3>
+          <p>Si buscas unos sellos automáticos que sean fáciles de manipular, con un diseño atractivo y con 
+            la posibilidad de personalizar sus líneas, entonces, los sellos automáticos 
+            Shiny son para ti. Disponibles en una gran variedad de modelos, cada uno de ellos mantiene 
+            la calidad y la funciones básicas como botón de bloqueo, cambio de almohadilla en un solo clic, 
+            pie anti-deslizante lo que ayuda a que no se sufran manchas de tinta en ningún momento.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="fechadores-automaticos-1-1200x565.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Sellos R-552D – S-826D</h3>
+          <p>Fechadores Automáticos con sello, diferentes tamaños y almohadillas intercambiables. Los sellos 
+            fechadores sirven para ahorrarnos el tiempo de estar escribiendo constantemente una fecha. Los fechadores 
+            disponen de unas ruedecillas giratorias que nos permiten ajustar una fecha determinada.
+
+          </p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="Sello-Seco-1200x565.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Sellos Seco</h3>
+          <p>Una forma muy original de personificar, detallar y salvaguardar documentos como hace decenios, 
+            es utilizando los sellos grabados en seco o relieve. Es muy usado en el entorno empresarial por notarios, 
+            abogados, fotógrafos, etc… así como organismos oficiales para proteger documentos de reproducciones y 
+            falsificaciones. Aporta un acabado único, duradero y exclusivos para marcar libros, membretes para cartas, 
+            invitaciones, tarjetas…
+
+          </p>
+        </div>
+      </div>
+      <!-- Agrega más productos aquí -->
+    </div>
+  </div>
+  <script>
+    const productImage = document.querySelector('.product-image');
+    
+    productImage.addEventListener('mouseover', function() {
+      productImage.style.transform = 'scale(2)';
+    });
+    
+    productImage.addEventListener('mouseout', function() {
+      productImage.style.transform = 'scale(1)';
+    });
+    
+  </script>
+
+
+
+
+
+
+</body>
+<footer style="background-color: #f2f2f2; padding: 100px; text-align: center;">
+	<h3 style="font-size: 24px; color: #000000; text-align: left;">TRODACOL LTDA</h3>
+	<p style="font-size: 16px; color: #666;text-align: left;">Este es una pagina dirigida a TRODACOL LTDA</p>
+	<p style="font-size: 16px; color: #666;text-align: left;">
+        Contacto."<br>";
+        Ubicación."<br>";
+        Bogotá Cra. 69 C No. 70-16,."<br>";
+        Tercer(3) piso.."<br>";
+        
+        Telefonos."<br>";
+        310 8241."<br>";
+        301 202 5840."<br>";
+        
+        Email
+        gerencia@trodacol.com
+    
+    </p>
+  
+</footer>
+
+
+
+</html>
+
+
+
+
+
+

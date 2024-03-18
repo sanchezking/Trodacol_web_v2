@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+			
+   .container {
+      display: flex;
+      align-items: center;
+        }
+        
+    .button {
+       margin-left: 90px;
+    }
+    .container_menuprincipal {
+      display: flex;
+      align-items: center;
+    }
+
+    .categorias_productos {
+      font-size: 10%;
+      display: flex;
+      width: 100%;
+      height: 35px;
+      background-color: rgb(255, 251, 0);
+      align-items: center;
+      font-size: 50px;
+    }
+
+    .categoria1,.categoria2,.categoria3,.categoria4 {
+      font-weight: bold;
+      padding: 50px;
+      font-size: 15px;
+      display: flex;
+
+    }
+
+    .product-list {
+      flex: 5;
+      
+    }
+
+    .product {
+      display: flex;
+      padding: 10px;
+      border-bottom: 1px solid gray;
+    }
+
+    .product-image {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .product-description {
+      flex: 1;
+    }
+   
+    .product-image {
+      width: 30%;
+      height: 200px;
+      transition: transform 0.2s;
+    }
+    
+    .product-image:hover {
+      transform: scale(2);
+    }
+     </style>
+
+</head>
+
+
+<body>
+    <div class="container_menuprincipal">
+		<img src="logo_troda.jpg" alt="Mi imagen" width="10%" height="10%">
+		<a href="index.html" class="btn">inicio</a>
+		<a href="contacto.html" class="btn">Contacto</a>
+	    <a href="productos.html" class="btn">tienda</a>
+	    <a href="nosotros.html" class="btn">Sobre nosotros</a>
+		<a href="tienda.html" class="btn">Productos</a>
+	  </div>
+
+
+  <div class="container_categorias">
+    <div class="categorias_productos">
+      <div class="categoria1"><a href="tienda.html" class="btn">sellos</a></div>
+      <div class="categoria2"><a href="huelleros.html" class="btn">huelleros</a></div>
+      <div class="categoria3"><a href="papeleria.html" class="btn">papeleria</a></div>
+      <div class="categoria4"><a href="aseo.html" class="btn">aseo</a></div>
+      <!-- Agrega más categorías aquí -->
+    </div>
+    <div class="product-list">
+      <div class="product">
+        <img class="product-image" src="varsol.jpg" alt="Producto 1">
+        <div class="product-description">
+          <h3>varsol</h3>
+          <p>selo para limpiar muebles, cocinas, electrodomésticos y pisos disuelto en agua así: 
+            tres partes de agua y una parte del producto. En prendas, disuélvalo en agua para 
+            lavadora o lavado normal.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="jabon_liquido.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Jabon Liquido</h3>
+          <p>Jabónones líquidos y en barra Hidratantes, que contienen un ingredientes antibacterianos 
+            que ayuda a la piel en su función de barrera natural contra bacterias y hongos, previene la 
+            contaminación cruzada y reduce el riesgo de transmisión de enfermedades.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="trapero.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Traperos</h3>
+          <p>Elaborado en forma de trenza para una mayor consistencia. Posee un cabo en madera de 1,40 cm de primera calidad con soporte para colgar.
+            Con pabilo de algodón 100% absorbente. Utilícelo sobre madera, mármol, azulejos y baldosas, entre otros.
+            Después de ser utilizado, enjuagar, escurrir y luego colgar en un soporte.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="escoba.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Escobas</h3>
+          <p>Escobas de diferente dureza y longitud de filamentos adecuadas 
+            para cada tipo de superficie como Cerámica, Madera, Mármol, Piso laminado,
+             alfombras, superficies ásperas. </p>
+        </div>
+      </div>
+      <div class="product">
+        <img class="product-image" src="recogedor.jpg" alt="Producto 2">
+        <div class="product-description">
+          <h3>Recogedores</h3>
+          <p>Recogedor en pala de plástico con borde de goma y mango largo con gancho para colgar, liviano y resistente.
+            en Polietileno Para uso doméstico en labores de recolección de suciedad.
+          </p>
+        </div>
+      </div>
+      <!-- Agrega más productos aquí -->
+    </div>
+  </div>
+  <script>
+    const productImage = document.querySelector('.product-image');
+    
+    productImage.addEventListener('mouseover', function() {
+      productImage.style.transform = 'scale(2)';
+    });
+    
+    productImage.addEventListener('mouseout', function() {
+      productImage.style.transform = 'scale(1)';
+    });
+    
+  </script>
+
+
+
+
+
+
+</body>
+<footer style="background-color: #f2f2f2; padding: 100px; text-align: center;">
+	<h3 style="font-size: 24px; color: #000000; text-align: left;">TRODACOL LTDA</h3>
+	<p style="font-size: 16px; color: #666;text-align: left;">Este es una pagina dirigida a TRODACOL LTDA</p>
+	<p style="font-size: 16px; color: #666;text-align: left;">
+        Contacto."<br>";
+        Ubicación."<br>";
+        Bogotá Cra. 69 C No. 70-16,."<br>";
+        Tercer(3) piso.."<br>";
+        
+        Telefonos."<br>";
+        310 8241."<br>";
+        301 202 5840."<br>";
+        
+        Email
+        gerencia@trodacol.com
+    
+    </p>
+  
+</footer>
+
+
+
+</html>

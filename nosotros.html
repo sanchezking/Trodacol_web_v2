@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+			
+   .container {
+      display: flex;
+      align-items: center;
+        }
+        
+    .button {
+       margin-left: 90px;
+    }
+    .container_menuprincipal {
+      display: flex;
+      align-items: center;
+    }
+    .map {
+        width: 20cm;
+        height: 20cm;
+      }
+  
+
+
+     </style>
+    
+    <div class="container_menuprincipal">
+		<img src="logo_troda.jpg" alt="Mi imagen" width="10%" height="10%">
+		<a href="index.html" class="btn">inicio</a>
+		<a href="contacto.html" class="btn">Contacto</a>
+	    <a href="nosotros.html" class="btn">Sobre nosotros</a>
+		<a href="tienda.html" class="btn">Productos</a>
+	  </div>
+    
+</head>
+
+
+<body>
+    <div id="map"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer>
+         function initMap() {
+    var mapOptions = {
+      center: { lat: 40.712776, lng: -74.005974 }, // Coordenadas de ejemplo (Nueva York)
+      zoom: 12 // Nivel de zoom
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  }
+
+
+
+    </script>
+
+ 
+</body>
+
+<footer style="background-color: #f2f2f2; padding: 100px; text-align: center;">
+	<h3 style="font-size: 24px; color: #000000; text-align: left;">TRODACOL LTDA</h3>
+	<p style="font-size: 16px; color: #666;text-align: left;">Este es una pagina dirigida a TRODACOL LTDA</p>
+	<p style="font-size: 16px; color: #666;text-align: left;">
+        Contacto."<br>";
+        Ubicación."<br>";
+        Bogotá Cra. 69 C No. 70-16,."<br>";
+        Tercer(3) piso.."<br>";
+        
+        Telefonos."<br>";
+        310 8241."<br>";
+        301 202 5840."<br>";
+        
+        Email
+        gerencia@trodacol.com
+    
+    </p>
+  
+</footer>
+
+</html>
